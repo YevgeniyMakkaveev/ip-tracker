@@ -1,0 +1,24 @@
+{
+  "name": "ip-tracker",
+  "version": "1.0.0",
+  "description": "Testing parcel",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "build": "parcel build src/index.html --out-dir=build",
+    "dev": "parcel src/index.html"
+  },
+  "author": "Yevgeny Makkaveev",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.1",
+    "leaflet": "^1.7.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "axios": "^0.21.1",
+    "leaflet": "^1.7.1"
+    
+  }
+}

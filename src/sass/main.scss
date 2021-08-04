@@ -1,0 +1,57 @@
+@import './normi';
+@import './var.scss';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+*{
+   font-family: 'Rubik',
+   sans-serif;
+}
+.head {
+ background-image: url(./../images/pattern-bg.png);
+ background-size: cover;
+ width: 100%;
+  padding: 2rem 1.5rem 10.5rem;
+  text-align: center;
+  position: relative;
+ input {
+  width: 80vw;
+  border-radius: 1.5rem;
+ }
+
+ button {
+  background-color: $veryDarkGray;
+ }
+}
+.result{
+   margin: auto;
+   width: 70vw;
+   padding: 0 1rem;
+   transform: translateY(-50%);
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: white;
+   border-radius: 0.2rem;
+   font-size: 22px;
+   .result__block{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      .result__section__name {
+         font-size: 18px;
+         color: $darkGray;
+      }
+      .result__section__label{
+         font-size: 24px;
+         font-weight: 700px;
+      }
+   }
+
+}
+#map{
+   width: 95%;
+   height: 500px;
+}
+
