@@ -4,7 +4,7 @@ import L from "leaflet";
 import axios from "axios";
 
 async function getAddress(ip = "8.8.8.8") {
-  const url = `https://geo.ipify.org/api/v1?apiKey=at_RGFJlbsE0JO6WacpYnQZDCsk3gMNy&ipAddress=${ip}`;
+  const url = `https://geo.ipify.org/api/v1?at_DXFKzBSzCbhkyZpDs164d6qCx0zTv&ipAddress=${ip}`;
 
   return await axios.get(url).then((response) => {
     console.log(response.data);
