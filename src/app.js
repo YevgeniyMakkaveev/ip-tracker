@@ -7,6 +7,13 @@ const ip = document.getElementById("ip");
 const location = document.getElementById("location");
 const timezone = document.getElementById("timezone");
 const isp = document.getElementById("isp");
+const form = document.querySelector(".head__form");
+const search = document.querySelector(".head__search");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  getAddress(search.value);
+});
 
 async function getAddress(ip = "8.8.8.8") {
   const url = `https://geo.ipify.org/api/v1?apiKey=at_DXFKzBSzCbhkyZpDs164d6qCx0zTv&ipAddress=${ip}`;
@@ -49,4 +56,4 @@ const makeMap = (lat, long) => {
     }
   ).addTo(map);
 };
-getAddress("109.105.133.36");
+// getAddress("109.105.133.36");

@@ -42,11 +42,11 @@
       width: 100%;
       align-items: center;
       .result__section__name {
-         font-size: 18px;
+         font-size: 1.5rem;
          color: $darkGray;
       }
       .result__section__label{
-         font-size: 24px;
+         font-size: 2rem;
          font-weight: 700px;
       }
    }
@@ -57,3 +57,19 @@
    height: 100vh;
 }
 
+@media screen and (min-width:$breakpoint-mobile) {
+  .result{
+     
+     min-height: 15vh;
+     flex-direction: row;
+     top: 15%;
+     
+  } 
+  .result__section__name {
+     font-size: 3rem;
+  }
+
+  .result__section__label {
+     font-size: 4rem;
+  }
+}
