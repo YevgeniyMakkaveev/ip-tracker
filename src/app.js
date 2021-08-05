@@ -83,12 +83,13 @@ L.tileLayer(
 ).addTo(map);
 
 const getToData = (data) => {
+  console.log(data);
   ip.innerHTML = data.ip;
-  location.innerHTML = data.location.region;
+  location.innerHTML = `${data.location.country} ${data.location.city}`;
   timezone.innerHTML = data.location.timezone;
   isp.innerHTML = data.isp;
-  let lat = data.location.lat;
-  let long = data.location.lng;
+  const lat = data.location.lat;
+  const long = data.location.lng;
   changeView(lat, long);
 };
 
