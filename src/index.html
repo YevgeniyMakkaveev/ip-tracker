@@ -17,45 +17,47 @@
 </head>
 
 <body>
+  <div class="wrapper">
 
-  <div class="head">
-    <h1> IP Adress Tracker</h1>
-    <form class="head__form">
-      <input type="search" class="head__search">
-      <button> <img src="./images/icon-arrow.svg" alt="arrow"></button>
-    </form>
-  </div>
+    <div class="head">
+      <div class="head__error">
+        <h2>Invalid IP Address</h2>
+      </div>
+      <h1 class="head__name"> IP Address Tracker</h1>
+      <form class="head__form">
+        <input type="search" class="head__search">
+        <button> <img src="./images/icon-arrow.svg" alt="arrow"></button>
+      </form>
+    </div>
 
-  <div class="result">
-    <div class="result__block">
-      <div class="result__section__name">IP Address</div>
-      <div id="ip" class="result__section__label">label</div>
-    </div>
-    <div class="result__block">
-      <div class="result__section__name">Location</div>
-      <div id="location" class="result__section__label">label</div>
-    </div>
-    <div class="result__block">
-      <div class="result__section__name">Timezone</div>
-      <div class="result__section__label">UTC
-        <span id="timezone" class="result__section__label">label</span>
+    <div class="result">
+      <div class="result__block">
+        <div class="result__section__name">IP Address</div>
+        <div id="ip" class="result__section__label">label</div>
+      </div>
+      <div class="result__block">
+        <div class="result__section__name">Location</div>
+        <div id="location" class="result__section__label">label</div>
+      </div>
+      <div class="result__block">
+        <div class="result__section__name">Timezone</div>
+        <div class="result__section__label">UTC
+          <span id="timezone" class="result__section__label">label</span>
+        </div>
+      </div>
+      <div class="result__block">
+        <div class="result__section__name">ISP</div>
+        <div id="isp" class="result__section__label">label</div>
       </div>
     </div>
-    <div class="result__block">
-      <div class="result__section__name">ISP</div>
-      <div id="isp" class="result__section__label">label</div>
+
+    <div id='map'>
     </div>
-  </div>
 
-  <div id='map'>
-
-  </div>
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/YevgeniyMakkaveev" target="_blank">Yevgeniy Makkaveev</a>.
+    </div>
   </div>
 </body>
 <script src="./app.js"></script>
