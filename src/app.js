@@ -83,7 +83,6 @@ L.tileLayer(
 ).addTo(map);
 
 const getToData = (data) => {
-  console.log(data);
   ip.innerHTML = data.ip;
   location.innerHTML = `${data.location.country} ${data.location.city}`;
   timezone.innerHTML = data.location.timezone;
